@@ -13,11 +13,11 @@ Primary Data Sources:
   For example, the message ID is 0x601：
   ```json
   if msg.messageId == 0x601 and len(msg.payload) >= 2:
-    PosLon = msg.GetFloats(offset=4, factor=1e-7, fmt=4)
-    PosLat = msg.GetFloats(offset=0, factor=1e-7, fmt=4)
+      PosLon = msg.GetFloats(offset=4, factor=1e-7, fmt=4)
+      PosLat = msg.GetFloats(offset=0, factor=1e-7, fmt=4)
   else:
-    PosLon = "N/A"
-    PosLat = "N/A"
+      PosLon = "N/A"
+      PosLat = "N/A"
   ```
   
 Output: 
