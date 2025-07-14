@@ -25,19 +25,22 @@ Primary Input:
   
 Output: 
   Multiple CSV files named by parameter group and physical quantity (e.g., "_01_Longitude_Latitude.csv").
-  Grouping information such as:
-        "8_9": "Longitude_Latitude",
-        "10": "Altitude",
-        "11": "2D_Speed",
-        "12_13_14": "3Axis_Angular_Acceleration",
-        "15_16": "Longitudinal_Lateral_Velocity",
-        "17_18_19": "3Axis_Linear_Acceleration",
-        "20_21_22": "Longitudinal_Lateral_Slip_Acceleration",
-        "23_24_25": "Heading_Pitch_Roll_Angle",
-        "26_27_28": "3Axis_Angular_Rate",
-        "29_30": "Longitudinal_Lateral_Angular_Rate",
-        "31_32": "Distance",
-        "33_34": "Local_XY_Position",
-        "35_36": "Local_XY_Velocity",
-        "37_38": "Local_Yaw_Track_Angle",
-        "39_40": "Longitudinal_Lateral_Angular_Acceleration"
+Grouping information such as:
+```json
+{
+    "8_9": "Longitude_Latitude",
+    "10": "Altitude",
+    "11": "2D_Speed",
+    "12_13_14": "3Axis_Angular_Acceleration",
+    "15_16": "Longitudinal_Lateral_Velocity",
+    "17_18_19": "3Axis_Linear_Acceleration",
+    "20_21_22": "Longitudinal_Lateral_Slip_Acceleration",
+    "23_24_25": "Heading_Pitch_Roll_Angle",
+    "26_27_28": "3Axis_Angular_Rate",
+    "29_30": "Longitudinal_Lateral_Angular_Rate",
+    "31_32": "Distance",
+    "33_34": "Local_XY_Position",
+    "35_36": "Local_XY_Velocity",
+    "37_38": "Local_Yaw_Track_Angle",
+    "39_40": "Longitudinal_Lateral_Angular_Acceleration"
+}
