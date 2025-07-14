@@ -19,6 +19,7 @@ if msg.messageId == 0x601 and len(msg.payload) >= 2:
 else:
     PosLon = "N/A"
     PosLat = "N/A"
+```
   
 Output: 
   CSV files containing message number, timestamp, message ID, payload, and dynamic parameters (see CSV headers).
@@ -36,7 +37,7 @@ Output:
   Multiple CSV files named by parameter group and physical quantity (e.g., "_01_Longitude_Latitude.csv").
 # 
 Grouping information such as:
-```json
+```python
 {
     "Longitude_Latitude",
     "Altitude",
@@ -54,3 +55,4 @@ Grouping information such as:
     "Local_Yaw_Track_Angle",
     "Longitudinal_Lateral_Angular_Acceleration"
 }
+  ```
