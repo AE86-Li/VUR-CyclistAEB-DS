@@ -10,15 +10,15 @@ Description:
 Primary Data Sources:
   CAN bus messages (including vehicle status, position, and motion parameters with IDs 0x600-0x60F)
   
-  For example, the message ID is 0x601：
-  ```json
-  if msg.messageId == 0x601 and len(msg.payload) >= 2:
-      PosLon = msg.GetFloats(offset=4, factor=1e-7, fmt=4)
-      PosLat = msg.GetFloats(offset=0, factor=1e-7, fmt=4)
-  else:
-      PosLon = "N/A"
-      PosLat = "N/A"
-  ```
+For example, the message ID is 0x601:
+
+```python
+if msg.messageId == 0x601 and len(msg.payload) >= 2:
+    PosLon = msg.GetFloats(offset=4, factor=1e-7, fmt=4)
+    PosLat = msg.GetFloats(offset=0, factor=1e-7, fmt=4)
+else:
+    PosLon = "N/A"
+    PosLat = "N/A"
   
 Output: 
   CSV files containing message number, timestamp, message ID, payload, and dynamic parameters (see CSV headers).
